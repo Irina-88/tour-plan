@@ -21,20 +21,13 @@
   .search
     &__input
       width: 340px
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 700px
     width: 92%
-
-@media (max-width: 576px)
-  .container
-    max-width: 500px
-    width: 92%
-  .logo
-    width: 99px
   .navbar
     &-top
-      padding-top: 28px
+      padding-top: 24px
       padding-bottom: 28px
     &-search, &-menu, &-user
       display: none
@@ -72,6 +65,13 @@
       &__offer
         order: -1
         margin-left: 0
+
+@media (max-width: 576px)
+  .container
+    max-width: 500px
+    width: 91%
+  .logo
+    width: 99px
 @media (max-width: 320px)
   .container
     max-width: 280px
