@@ -716,21 +716,21 @@ small {
 .booking__start {
   font-weight: normal;
   font-size: 10px;
-  line-height: 14px;
+  line-height: 13px;
 }
 
 .booking__pricetag {
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 32px;
 }
 
 .booking__per-room {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
 }
 
 .booking__room {
@@ -802,8 +802,9 @@ small {
 .booking__button {
   width: 100%;
   min-height: 45px;
+  font-style: normal;
+  font-size: 14px;
   font-weight: 600;
-  font-style: 14px;
   line-height: 19px;
   background-color: #EC1F46;
   border: none;
