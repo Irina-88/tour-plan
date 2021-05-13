@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper-container', {
    autoplay: {
    delay: 3000,
  },
-  //keyboard: {
+  keyboard: {
     enabled: true,
     onlyInViewport: true,
   },
