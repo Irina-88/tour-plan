@@ -623,7 +623,7 @@ small {
 
 .swiper-container {
   width: 100%;
-  max-height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
@@ -644,6 +644,7 @@ small {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -672,7 +673,15 @@ small {
   background-image: url(../img/arrow-prev.svg);
 }
 
+.swiper-slide__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .booking {
+  font-family: Nunito;
   background-color: #0A223D;
   color: #fff;
   border-radius: 8px;
@@ -806,13 +815,22 @@ small {
 .map {
   width: 347px;
   height: 213px;
-  background-color: #000;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -841,15 +859,35 @@ small {
   .search__input {
     width: 340px;
   }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+  }
   .slider {
-    max-width: 700px;
     width: 100%;
+  }
+  .map {
+    width: 340px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    max-width: 700px;
+    max-width: 576px;
     width: 92%;
   }
   .navbar-top {
@@ -917,7 +955,19 @@ small {
     margin-left: 0;
   }
   .slider {
-    max-width: 700px;
+    height: 350px;
+  }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
     width: 100%;
   }
 }
@@ -931,8 +981,7 @@ small {
     width: 99px;
   }
   .slider {
-    max-width: 500px;
-    width: 100%;
+    height: 250px;
   }
 }
 
@@ -940,8 +989,11 @@ small {
   .container {
     max-width: 280px;
   }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
   .slider {
-    max-width: 278px;
+    height: 176px;
   }
 }
 /*# sourceMappingURL=style.css.map */
