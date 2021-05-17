@@ -45,16 +45,28 @@
     padding: 28px 22px 26px 23px
   .map
     width: 340px
+  .newsletter
+    padding: 92px 34px 93px 34px
   .reviews
     padding: 40px 0 60px 0
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
         padding: 0 29px 33px
         &:after, &:before
           display: none
-    &__title
-      margin-bottom: 50px
+      &__button
+        position: absolute
+        top: 53%
+        transform: translateY(-50%)
+        width: 30px
+        height: 30px
+        margin-right: 0
+        margin-left: 0
   .activities
     padding: 60px 0 50px 0
     &-wrapper
@@ -110,7 +122,7 @@
         order: -1
         margin-left: 0
     &-slider
-      height: 350px
+      height: 179px
     &-grid
       margin-top: 18px
     &-right
@@ -122,9 +134,19 @@
     width: 100%
     height: 173px
   .newsletter
-    padding: 92px 34px 93px 34px
+    padding: 76px 20px 83px 20px
     &-title
-      margin-right: 20px
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+        margin-top: 5px
+    &__title
+      margin-top: 0
+      margin-right: 30px
       margin-bottom: 37px
     &-wrapper
       max-width: 576px
@@ -133,9 +155,14 @@
       align-items: flex-start
       margin: 0
   .reviews
+    padding: 40px 0 50px 0
     &__title
-      font-size: 30px
-      line-height: 38px
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+      margin: 0 34px 42px 34px
     &-slider
       &__button
         top: 32px
@@ -162,42 +189,19 @@
     padding-top: 0
     padding-bottom: 37px
     &-slider
-      height: 250px
-  .newsletter
-    padding: 76px 20px 83px 20px
-    &-title
-      font-weight: 300
-      font-size: 20px
-      line-height: 25px
-      &__strong
-        font-weight: 600
-        font-size: 30px
-        line-height: 38px
-        margin-top: 5px
-    &__title
-      margin-top: 0
-      margin-right: 30px
-      margin-bottom: 37px
+      max-height: 179px
   .reviews
-    padding: 40px 0 50px 0
-    &__title
-      font-weight: bold
-      font-size: 18px
-      line-height: 23px
-      text-align: center
-      text-transform: uppercase
-      margin: 0 34px 42px 34px
     &-slider
       &__text
         text-align: left
       &__button
         top: 32px
         &--prev
-          left: 53%
+          left: 65%
           margin-left: -123px
           transform: translate(-50%, 0)
         &--next
-          right: 53%
+          right: 64%
           margin-right: -120px
           transform: translate(50%, 0)
   .activities
