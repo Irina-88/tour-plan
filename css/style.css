@@ -836,9 +836,8 @@ small {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -1138,7 +1137,6 @@ small {
 }
 
 .card__title {
-  max-width: 200px;
   margin-top: auto;
   margin-bottom: 18px;
   color: #fff;
