@@ -11,6 +11,11 @@
   .card
     width: 230px
     height: 250px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__links
+      grid-column: 1 / 2
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -31,6 +36,7 @@
     &__input
       width: 340px
   .hotel
+    padding-top: 19px
     padding-bottom: 58px
     &-grid
       flex-direction: column
@@ -84,6 +90,73 @@
   .card
     width: 340px
     height: 255px
+  .footer
+    padding-top: 73px
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 47%
+    &__logo
+      width: 104px
+      height: 120px
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+      margin-bottom: 23px
+    &__legal
+      justify-self: center
+      grid-column: span 2
+      margin-left: 5px
+    &__additional
+      margin-left: -40px
+      grid-column: span 2
+    &__icon
+      margin-left: 7px
+      &-wrapper
+        min-width: 45px
+    &__contact
+      &-details
+        margin-bottom: -8px
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        max-width: 539px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        margin-top: 10px
+        grid-column: span 5
+        grid-row: 4
+    &__title
+      &--inline
+        margin: 0 43px 0 -54px
+      &--mb-3
+        margin-bottom: 23px
+        margin-top: 2px
+      &--mb-1
+        margin-top: -3px
+        margin-bottom: 34px
+    &__item--mb-2
+      margin-bottom: 20px
+    &-wrapp
+      max-width: 698px
+      padding-top: 54px
+      grid-template-columns: 2fr 1fr
+      justify-items: start
+      &__pay
+        justify-self: end
+        grid-column: 2
+    &__links
+      justify-items: start
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -187,6 +260,12 @@
   .card
     width: 48%
     height: 255px
+  .footer
+    &__logo
+      width: 104px
+      height: 120px
+    &__input
+      flex-basis: 100%
 @media (max-width: 576px)
   .container
     max-width: 500px
@@ -247,6 +326,108 @@
       margin-bottom: 36px
   .card
     width: 100%
+    &-change-3
+      order: 1
+    &-change-2
+      order: 2
+  .footer
+    padding-top: 69px
+    padding-bottom: 30px
+    &-wrapper
+      min-width: 281px
+      grid-template-columns: minmax(280px, 1fr)
+      grid-row-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+      margin-bottom: 10px
+    &__social
+      &-network
+        flex-wrap: wrap
+        grid-row: 2
+        grid-column: 1
+      &-links
+        min-width: 98px
+    &__title
+      flex-basis: 100%
+      margin-bottom: 17px
+      &--mb-3
+        margin-bottom: 23px
+        margin-top: -9px
+      &--mb-1
+        margin-bottom: 17px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160%
+      flex-basis: 100%
+    &__additional
+      margin-left: 0
+      grid-column: 1
+      grid-row: 4
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__legal
+      margin-left: 0
+      justify-self: start
+      grid-row: 3
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        max-height: 386px
+        margin-top: 29px
+        grid-row: 7
+        grid-column: 1
+    &__icon
+      margin-left: 0
+      margin-top: 5px
+      &-wrapper
+        min-width: 30px
+    &__input
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-top: -3px
+      flex-basis: 100%
+    &__item
+      flex-basis: 100%
+      &--mb-2
+        margin-bottom: 20px
+    &__link
+      flex-basis: 100%
+    &__message
+      flex-basis: 100%
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 15px
+    &-wrapp
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr 1fr
+      padding: 21px 0 21px 0
+      &__pay
+        grid-column: span 2
+        grid-row: 2
+        justify-self: start
+        margin-top: 2px
+    &__ref
+      margin-right: 4px
+    &__icons-pay
+      margin-top: 2px
+    &__info
+      flex-basis: 100%
+      order: 1
+      margin-bottom: 15px
+    &__button
+      order: 2
+
 @media (max-width: 320px)
   .container
     max-width: 280px
