@@ -244,7 +244,11 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button data-toggle="modal" class="button booking__button">
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="booking__button"
+              >
                 View Other Options
               </button>
             </div>
@@ -448,7 +452,13 @@
               The curious corner <br />
               of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#aktiv-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -458,7 +468,13 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf <br />course</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#aktiv-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div class="card activities__card activities-change-2">
@@ -471,7 +487,13 @@
               Tamarind falls hiking <br />
               trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#aktiv-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div class="card activities__card activities-change-3">
@@ -484,7 +506,13 @@
               The blue marine discovery <br />
               quest
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#aktiv-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
         </div>
@@ -683,15 +711,54 @@
       </div>
       <!-- /.container -->
     </footer>
-    <div class="modal">
+    <div class="modal" id="booking-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="" class="modal__close"
-          ><img src="img/close.svg" alt="Icon: close"
+          ><img class="modal__image" src="img/close.svg" alt="Icon: close"
         /></a>
-        <h3 class="modal__title">Send us a message</h3>
-        <form action="send.php" method="POST" class="form modal__form">
+        <h3 class="modal__title">Booking</h3>
+        <form action="mes.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="name"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="aktiv-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="" class="modal__close"
+          ><img class="modal__image" src="img/close.svg" alt="Icon: close"
+        /></a>
+        <h3 class="modal__title">Send us what interests you</h3>
+        <form action="mes.php" method="POST" class="form modal__form">
           <input
             type="text"
             class="input modal__input"

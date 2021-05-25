@@ -1462,8 +1462,11 @@ small {
 }
 
 .modal__dialog--visible {
+  max-height: 67%;
   visibility: visible;
   opacity: 1;
+  display: block;
+  overflow-y: auto;
 }
 
 .modal__title {
@@ -1785,6 +1788,9 @@ small {
   .footer__links {
     justify-items: start;
   }
+  .modal__dialog {
+    padding: 35px 60px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2005,6 +2011,22 @@ small {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .modal__dialog {
+    max-width: 95%;
+    padding: 30px;
+  }
+  .modal__title {
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 0;
+  }
+  .modal__close {
+    right: 11px;
+    top: 10px;
+  }
+  .modal__image {
+    max-width: 75%;
   }
 }
 
