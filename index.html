@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar navbar__mobile--fixed">
+    <header class="navbar navbar--mobile navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -25,7 +25,7 @@
           </a>
           <form
             action="#"
-            class="search navbar__search navbar__search--mobile_hidden"
+            class="search navbar__search navbar__search--mobile--hidden"
           >
             <input
               type="text"
@@ -36,7 +36,7 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -57,10 +57,10 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <a
                 href="#"
-                class="user navbar__user navbar__user--mobile_visible"
+                class="user navbar__user navbar__user--mobile--visible"
               >
                 <img
                   src="img/user-avatar.jpg"
@@ -70,10 +70,10 @@
                 <span class="user__name user__name--light">Nathan</span>
               </a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <form
                 action="#"
-                class="search navbar__search navbar__search--mobile_visible"
+                class="search navbar__search navbar__search--mobile--visible"
               >
                 <input
                   type="text"
@@ -636,22 +636,23 @@
             <h3 class="footer__title footer__title--mb-3 footer__title--mb-1">
               Send us a message
             </h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
-                cols="30"
-                rows="10"
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -680,6 +681,46 @@
       </div>
       <!-- /.container -->
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="" class="modal__close"
+          ><img src="img/close.svg" alt="Icon: close"
+        /></a>
+        <h3 class="modal__title">Send us a message</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="name"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
