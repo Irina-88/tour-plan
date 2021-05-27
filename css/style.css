@@ -68,7 +68,7 @@ img {
 }
 
 .invalid {
-  color: #EC1F46;
+  color: #fff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -508,6 +508,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {

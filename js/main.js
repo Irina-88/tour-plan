@@ -46,9 +46,9 @@ function openModal() {
 function closeModal(event) {
   event.preventDefault();
   var modalOverlay = $('.modal__overlay');
-   var modalDialog = $('.modal__dialog');
-   modalOverlay.removeClass('modal__overlay--visible');
-   modalDialog.removeClass('modal__dialog--visible');
+  var modalDialog = $('.modal__dialog');
+  modalOverlay.removeClass('modal__overlay--visible');
+  modalDialog.removeClass('modal__dialog--visible');
 }
 // Обработка форм
   $('.form').each(function (){
@@ -68,10 +68,11 @@ function closeModal(event) {
         },
       },
     });
-  })
+  });
   // Маска номера телефона
   $(document).ready(function(){
     $('[type="tel"]').mask('+7 (999) 999-99-99')
   });
+  // Анимация
   AOS.init();
 });
