@@ -16,7 +16,9 @@
     <header class="navbar navbar--mobile navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="/" class="logo">
+          <a href="/" class="logo" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="100">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -25,7 +27,8 @@
           </a>
           <form
             action="#"
-            class="search navbar__search navbar__search--mobile--hidden"
+            class="search navbar__search navbar__search--mobile--hidden"  data-aos="fade-left"
+            data-aos-delay="300"
           >
             <input
               type="text"
@@ -36,7 +39,8 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden"  data-aos="fade-left"
+            data-aos-delay="300">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -116,9 +120,12 @@
       <div class="container">
           <div class="appeal__form">
             <div class="appeal-wrapper">
-              <h1 class="appeal__info">Message sent!</h1>
+              <h1 class="appeal__info" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300">Message sent!</h1>
             </div>
-            <h3 class="appeal-description">
+            <h3 class="appeal-description"  data-aos="fade-up"
+            data-aos-delay="500">
               Our manager will contact you.
             </h3>
           </div>
@@ -134,7 +141,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="/" class="footer__logo"
+          <a href="/" class="footer__logo" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
             ><img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -274,7 +283,8 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div class="footer__contact-form" data-aos="fade-up"
+            data-aos-delay="300">
             <h3 class="footer__title footer__title--mb-3 footer__title--mb-1">
               Send us a message
             </h3>
@@ -330,9 +340,13 @@
       </div>
       <!-- /.container -->
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
