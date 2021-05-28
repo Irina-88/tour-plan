@@ -54,10 +54,24 @@ function closeModal(event) {
   $('.form').each(function (){
     $(this).validate({
       errorClass: 'invalid',
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        phone: {
+          required: true,
+          minlength: 10
+        }
+      },
       messages: {
         name: {
           required: 'Please specify your name',
-          minlength: 'name must be at least 2 letters',
+          minlength: 'Name must be at least 2 letters',
         },
         email: {
           required: 'We need your email address to contact you',
