@@ -65,7 +65,7 @@ function closeModal(event) {
         },
         phone: {
           required: true,
-          minlength: 10
+          minlength: 13
         }
       },
       messages: {
