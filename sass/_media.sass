@@ -160,6 +160,9 @@
     &__link
       &:hover
         color: inherit
+    &__link
+      &-img:hover
+        transform: scale(1)
     &__contact
       &-details
         margin-bottom: -8px
@@ -196,6 +199,9 @@
         grid-column: 2
     &__links
       justify-items: start
+    &__ref
+      &:hover
+        color: $light
   .button
     &:hover
       background-color: $primary
@@ -396,6 +402,11 @@
     padding-bottom: 41px
     &-slider
       max-height: 179px
+      &__button
+        &--next
+          right: 9px
+        &--prev
+          left: 4px
   .booking
     &__price
       margin-top: 2px
@@ -434,12 +445,13 @@
       margin-bottom: 36px
   .card
     width: 100%
-    &-change-3
+    &--change
       order: 1
-    &-change-2
+      margin-top: 6px
+    &--change--1
       order: 2
   .footer
-    padding-top: 76px
+    padding-top: 70px
     padding-bottom: 30px
     &-wrapper
       min-width: 281px
@@ -542,7 +554,16 @@
       margin-bottom: 15px
     &__button
       order: 2
-
+  .modal
+    &__dialog
+      width: 85%
+      padding: 30px
+    &__info
+      flex-basis: 100%
+      order: 1
+      margin-top: 15px
+    &__button
+      order: 2
 @media (max-width: 320px)
   .container
     max-width: 280px

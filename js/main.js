@@ -65,7 +65,7 @@ function closeModal(event) {
         },
         phone: {
           required: true,
-          minlength: 13
+          minlength: 18
         }
       },
       messages: {
@@ -79,6 +79,7 @@ function closeModal(event) {
         },
         phone: {
           required: 'Your phone number is required',
+          minlength: 'Phone must be at least 18 characters',
         },
       },
     });

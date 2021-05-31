@@ -81,6 +81,12 @@
     color: inherit
     &:hover
       color: $primary
+  &__link
+    &-img
+      width: 24px
+      height: 24px
+      &:hover
+        transform: scale(1.1)
   &__input
     width: 100%
     &-group
@@ -97,7 +103,7 @@
     color: #E0E0E0
   &-wrapp
     display: grid
-    grid-template-columns: 30% 1fr 30%
+    grid-template-columns: 36% 1fr 36%
     grid-template-rows: 1fr
     justify-items: end
     align-items: center
@@ -113,5 +119,7 @@
     font-size: 12px
     line-height: 15px
     margin-right: 8px
+    &:hover
+      color: $primary
   &__icons-pay
     max-width: 136px
