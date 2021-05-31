@@ -43,12 +43,17 @@
       &__link
         font-size: 12px
         line-height: 15px
+        &:hover
+          color: inherit
   .breadcrumb
     &-list
       padding: 18px 0
   .search
     &__input
       width: 340px
+    &__button
+      &:hover
+        background-color: $primary
   .hotel
     padding-top: 19px
     padding-bottom: 58px
@@ -67,14 +72,24 @@
   .booking
     width: 340px
     padding: 28px 22px 26px 23px
+    &__number
+      &:hover
+        color: inherit
     &__info
       margin-bottom: 10px
     &__room
       margin-top: 0
+    &__button
+      &:hover
+        background-color: $primary
   .map
     width: 340px
   .newsletter
     padding: 92px 34px 93px 34px
+  .subscribe
+    &__button
+      &:hover
+        background-color: $primary
   .reviews
     padding: 40px 0 60px 0
     &__title
@@ -104,6 +119,9 @@
   .card
     width: 340px
     height: 255px
+    &__button
+      &:hover
+        background-color: $primary
   .footer
     padding-top: 73px
     &-wrapper
@@ -139,6 +157,9 @@
       &-wrapper
         min-width: 45px
         margin-right: 0
+    &__link
+      &:hover
+        color: inherit
     &__contact
       &-details
         margin-bottom: -8px
@@ -175,6 +196,9 @@
         grid-column: 2
     &__links
       justify-items: start
+  .button
+    &:hover
+      background-color: $primary
   .modal
     &__dialog
       overflow-y: auto
